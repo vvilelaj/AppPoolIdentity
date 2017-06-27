@@ -24,9 +24,19 @@
         @Html.DisplayTextFor(Model => Model.UserIdentityName)
     </div>
 </div>
+@if (!Model.IsAuthenticated)
+{
 <div class="row">
-    <div class="col-sm-2">@Html.ActionLink("Tengo una cuenta creada","Login")</div>
+    <div class="col-sm-2">@Html.ActionLink("Tengo una cuenta creada", "LogIn", "Account")</div>
 </div>
+}
+else
+{
+    <div class="row">
+        <div class="col-sm-2">@Html.ActionLink("Tengo una cuenta creada", "LogOut", "Account")</div>
+    </div>
+}
+
 <div class="row">
-    <div class="col-sm-2">@Html.ActionLink("Deseo crear una cuenta", "CreateAccount")</div>
+    <div class="col-sm-2">@Html.ActionLink("Deseo crear una cuenta", "Create", "Account")</div>
 </div>

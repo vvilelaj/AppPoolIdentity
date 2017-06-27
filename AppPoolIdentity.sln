@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppPoolIdentity.WebMvc", "AppPoolIdentity.WebMvc\AppPoolIdentity.WebMvc.csproj", "{A67E1575-9278-48CC-8DF8-887A751AB547}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppPoolIdentity.WebMvc.UnitTests", "AppPoolIdentity.WebMvc.UnitTests\AppPoolIdentity.WebMvc.UnitTests.csproj", "{33AB9CB7-5AC3-4987-9ECE-C49FB77CA5B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A67E1575-9278-48CC-8DF8-887A751AB547}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A67E1575-9278-48CC-8DF8-887A751AB547}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A67E1575-9278-48CC-8DF8-887A751AB547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33AB9CB7-5AC3-4987-9ECE-C49FB77CA5B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33AB9CB7-5AC3-4987-9ECE-C49FB77CA5B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33AB9CB7-5AC3-4987-9ECE-C49FB77CA5B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33AB9CB7-5AC3-4987-9ECE-C49FB77CA5B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

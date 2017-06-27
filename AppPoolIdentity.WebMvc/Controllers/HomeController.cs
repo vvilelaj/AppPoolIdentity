@@ -10,13 +10,19 @@ namespace AppPoolIdentity.WebMvc.Controllers
 {
     public class HomeController : Controller
     {
+        [AllowAnonymous]
         public ActionResult Index(WebAppIdentityModel model)
         {
             model.AppPoolIdentityName = WindowsIdentity.GetCurrent().Name;
             model.UserIdentityName = !HttpContext.User.Identity.IsAuthenticated ?
                 "(Anonymous)" : 
                 HttpContext.User.Identity.Name;
+            model.IsAuthenticated = HttpContext.User.Identity.IsAuthenticated;
             return View(model);
         }
+
+        
+
+        
     }
 }

@@ -9,5 +9,6 @@ namespace AppPoolIdentity.WebMvc.Models
     {
         public string AppPoolIdentityName { get; set; }
         public string UserIdentityName { get; set; }
+        public bool IsAuthenticated { get; set; }
     }
 }
